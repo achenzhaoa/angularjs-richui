@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html  ng-app="RichUI">
 
   <head>
     <meta charset='utf-8' />
@@ -9,6 +9,29 @@
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
     <title>Angularjs-richui</title>
+    
+    <link rel="stylesheet" href="bootstrap3/css/bootstrap.css">
+
+<script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+
+<script type="text/javascript" src="bootstrap3/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="angular-1.2.3/angular.js"></script>
+    <script type="text/javascript" src="angular-1.2.3/angular-route.js"></script>
+    <script type="text/javascript" src="angular-1.2.3/angular-resource.js"></script>
+    <script type="text/javascript" src="angular-1.2.3/angular-animate.js"></script>
+
+    <script type="text/javascript" src="ext-4.2.1.883/examples/shared/include-ext.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="ext-4.2.1.883/examples/calendar/resources/css/calendar.css" />
+    <link rel="stylesheet" type="text/css" href="ext-4.2.1.883/examples/calendar/resources/css/examples.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/animation.css"/>
+    <link rel="stylesheet" type="text/css" href="css/mail.css"/>
+
+    <script type="text/javascript" src="apps.js"></script>
+    <script type="text/javascript" src="js/filters.js"></script>
+    <script type="text/javascript" src="js/calendar.js"></script>
   </head>
 
   <body>
@@ -28,35 +51,18 @@
         </header>
     </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>
-<a name="angularjs-richui" class="anchor" href="#angularjs-richui"><span class="octicon octicon-link"></span></a>angularjs-richui</h1>
+	 <div role="main" class="container">
 
-<p>make richui using angluarjs</p>
-      </section>
-    </div>
+      <ul class="nav nav-tabs" ng-controller="AppCtrl">
+              <li ng-repeat="app in apps" class="{{getTabClass($index)}}" ng-click="activeTab($index)">
+                      <a href="#{{app.href}}">{{app.text}}</a>
+              </li>
+      </ul>
+      <div class="view-animate-container">
+         <div ng-view class="view-animate"></div>
+      </div>
+     
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Angularjs-richui maintained by <a href="https://github.com/achenzhaoa">achenzhaoa</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("angularjs-richui");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
-
-
+     </div>
   </body>
 </html>

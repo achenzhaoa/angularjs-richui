@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>Ext JS Calendar Sample</title>
+    <link rel="stylesheet" type="text/css" href="ext-4.2.1.883/examples/calendar/resources/css/calendar.css" />
+    <link rel="stylesheet" type="text/css" href="ext-4.2.1.883/examples/calendar/resources/css/examples.css" />
+
+    <!-- GC -->
+    
+    <script type="text/javascript" src="ext-4.2.1.883/examples/shared/include-ext.js"></script>
+   
+
+    <script type="text/javascript">
+        Ext.Loader.setConfig({
+            enabled: true,
+            paths: {
+                'Ext.calendar': 'ext-4.2.1.883/examples/calendar/src'
+            }
+        });
+        Ext.require([
+            //'Ext.diag.layout.Context',
+            //'Ext.diag.layout.ContextItem',
+            'Ext.calendar.App'
+        ]);
+        Ext.onReady(function(){
+            // launch the app:
+            Ext.create('Ext.calendar.App');
+        });
+    </script>
+</head>
+<body>
+   
+    <div id="calendar-ct">
+    </div>
+</body>
+</html>

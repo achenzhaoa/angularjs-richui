@@ -1,0 +1,23 @@
+[
+	{"type":0,"from":"Frank.chen@owmessging.com","to":"inbox user2","date":"2013-12-08","status":"success","subject":"This is only a test1"},
+	{"type":0,"from":"Frank.chen@owmessging.com","to":"inbox user3","date":"2013-12-09","status":"","subject":"This is only a test2"},
+	{"type":0,"from":"Frank.chen@owmessging.com","to":"inbox user4","date":"2013-12-10","status":"warning","subject":"This is only a test3"},
+	{"type":0,"from":"Frank.chen@owmessging.com","to":"inbox user5","date":"2013-12-11","status":"","subject":"This is only a test4"},
+	{"type":0,"from":"Frank.chen@owmessging.com","to":"inbox user6","date":"2013-12-12","status":"danger","subject":"This is only a test5"},
+    {"type":1,"from":"Frank.chen@owmessging.com","to":"draft user2","date":"2013-12-08","status":"success","subject":"This is only a test6"},
+	{"type":1,"from":"Frank.chen@owmessging.com","to":"draft user3","date":"2013-12-09","status":"","subject":"This is only a test7"},
+	{"type":1,"from":"Frank.chen@owmessging.com","to":"draft user4","date":"2013-12-10","status":"warning","subject":"This is only a test8"},
+	{"type":1,"from":"Frank.chen@owmessging.com","to":"draft user5","date":"2013-12-11","status":"","subject":"This is only a test9"},
+	{"type":1,"from":"Frank.chen@owmessging.com","to":"draft user6","date":"2013-12-12","status":"danger","subject":"This is only a test10"},
+	{"type":2,"from":"Frank.chen@owmessging.com","to":"inbox user7","date":"2013-12-08","status":"success","subject":"This is only a test1"},
+	{"type":2,"from":"Frank.chen@owmessging.com","to":"inbox user8","date":"2013-12-09","status":"","subject":"This is only a test2"},
+	{"type":2,"from":"Frank.chen@owmessging.com","to":"inbox user9","date":"2013-12-10","status":"warning","subject":"This is only a test3"},
+	{"type":2,"from":"Frank.chen@owmessging.com","to":"inbox user5","date":"2013-12-11","status":"","subject":"This is only a test4"},
+	{"type":2,"from":"Frank.chen@owmessging.com","to":"inbox user6","date":"2013-12-12","status":"danger","subject":"This is only a test5"},
+    {"type":3,"from":"Frank.chen@owmessging.com","to":"draft user2","date":"2013-12-08","status":"success","subject":"This is only a test6"},
+	{"type":3,"from":"Frank.chen@owmessging.com","to":"draft user3","date":"2013-12-09","status":"","subject":"This is only a test7"},
+	{"type":3,"from":"Frank.chen@owmessging.com","to":"draft user4","date":"2013-12-10","status":"warning","subject":"This is only a test8"},
+	{"type":3,"from":"Frank.chen@owmessging.com","to":"draft user5","date":"2013-12-11","status":"","subject":"This is only a test9"},
+	{"type":3,"from":"Frank.chen@owmessging.com","to":"draft user6","date":"2013-12-12","status":"danger","subject":"This is only a test10"}
+	
+	]

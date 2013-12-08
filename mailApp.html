@@ -1,0 +1,48 @@
+<div class="container"  ng-controller="MailApp">
+	<div class="row">
+		<div class="col-md-3">
+			<ul class="nav nav-pills nav-stacked">
+			  <li ng-repeat="folder in folders" class="{{getMailActiveTab($index)}}" ng-click="setMailActiveTab($index)">
+			    <a href="">
+			      <span class="badge pull-right">{{folder.unread}}</span>
+			      {{folder.text}}
+			    </a>
+			  </li>
+			</ul>
+		</div>
+		<div class="col-md-8">
+			<div class="mail-list">
+				<table class="table table-bordered table-hover">
+					<tr>
+						<th>#</th>
+						<th>From</th>
+						<th>To</th>
+						<th>Subject</th>
+						<th>Date</th>
+					</tr>
+					<tr ng-repeat="item in lists|mailforlder:MailDefaultActiveTab" class="{{item.status}}" ng-click="getCurrentPreview($index)">
+						<td>{{$index+1}}</td>
+						<td>{{item.from}}</td>
+						<td>{{item.to}}</td>
+						<td>{{item.subject}}</td>
+						<td>{{item.date}}</td>
+					</tr>
+				</table>
+				<ul class="pagination mail-pagination pagination-sm">
+				  <li class="disabled"><a href="#">&laquo;</a></li>
+				  <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+				  <li class=""><a href="#">2</span></a></li>
+				  <li class=""><a href="#">3</span></a></li>
+				  <li class=""><a href="#">4</span></a></li>
+				  <li class=""><a href="#">5</span></a></li>
+				</ul>
+			</div>
+			<div class="mail-preview" style="background-image:url(letter-paper/{{currentPreview.index+1}}.jpg)">
+               <div class="glyphicon glyphicon-user">From:{{currentPreview.from}}</div>
+               <div class="glyphicon glyphicon-arrow-right">To:{{currentPreview.to}}</div>
+               <div class="glyphicon glyphicon-calendar">Date:{{currentPreview.date}}</div>
+               <h1>{{currentPreview.subject}}</h1>
+			</div>
+		</div>
+	</div>
+</div>
