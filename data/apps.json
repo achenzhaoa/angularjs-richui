@@ -1,0 +1,22 @@
+[
+	{
+		"text":"Mail",
+		"href":"mail",
+		"appClass":"active"
+	},
+	{
+		"text":"Contacts",
+		"href":"contact",
+		"appClass":""
+	},
+	{
+		"text":"Calendar",
+		"href":"calendar",
+		"appClass":""
+	},
+	{
+		"text":"Testing",
+		"href":"testing",
+		"appClass":""
+	}
+]

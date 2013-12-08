@@ -1,0 +1,45 @@
+<!doctype html>
+<html ng-app="RichUI">
+  <head>
+  	<link rel="stylesheet" href="bootstrap3/css/bootstrap.css">
+
+<script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+
+<script type="text/javascript" src="bootstrap3/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="angular-1.2.3/angular.js"></script>
+    <script type="text/javascript" src="angular-1.2.3/angular-route.js"></script>
+    <script type="text/javascript" src="angular-1.2.3/angular-resource.js"></script>
+    <script type="text/javascript" src="angular-1.2.3/angular-animate.js"></script>
+
+    <script type="text/javascript" src="ext-4.2.1.883/examples/shared/include-ext.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="ext-4.2.1.883/examples/calendar/resources/css/calendar.css" />
+    <link rel="stylesheet" type="text/css" href="ext-4.2.1.883/examples/calendar/resources/css/examples.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/animation.css"/>
+    <link rel="stylesheet" type="text/css" href="css/mail.css"/>
+
+    <script type="text/javascript" src="apps.js"></script>
+    <script type="text/javascript" src="js/filters.js"></script>
+    <script type="text/javascript" src="js/calendar.js"></script>
+  </head>
+
+  <body>
+    <div role="main" class="container">
+
+      <ul class="nav nav-tabs" ng-controller="AppCtrl">
+      	<li ng-repeat="app in apps" class="{{getTabClass($index)}}" ng-click="activeTab($index)">
+      		<a href="#{{app.href}}">{{app.text}}</a>
+      	</li>
+      </ul>
+      <div class="view-animate-container">
+         <div ng-view class="view-animate"></div>
+      </div>
+     
+
+     </div>
+  </body>
+
+
+</html>

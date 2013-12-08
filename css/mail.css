@@ -1,0 +1,14 @@
+.mail-preview{
+	height:250px;
+	margin-top: 40px;
+}
+
+.mail-pagination{
+	float: right;
+	margin-top: -15px;
+}
+
+.mail-preview div{
+	display:block;
+	padding: 10px;
+}
