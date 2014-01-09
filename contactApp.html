@@ -1,5 +1,5 @@
 <div ng-controller="ContactApp">
-  <form novalidate class="css-form">
+  <form novalidate class="css-form" name="form">
         Name:
           <input type="text" ng-model="user.name" name="uName" required /><br />
           
@@ -12,9 +12,9 @@
         </div>
         
     Age:
-    <input type="number" ng-model="user.age" name="size"
+    <input type="number" ng-model="user.age" name="uAge"
                  min="0" max="200" integer />{{size}}<br />
-          <span ng-show="form.size.$error.min || form.size.$error.max">
+          <span ng-show="form.uAge.$error.min || form.uAge.$error.max">
             Your age shoule be in 0~200!</span>
   </form>
   <pre>
