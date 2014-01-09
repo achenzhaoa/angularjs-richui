@@ -1,1 +1,23 @@
-This is Contact App
+<div ng-controller="Controller">
+  <form novalidate class="css-form">
+        Name:
+          <input type="text" ng-model="user.name" name="uName" required /><br />
+          
+        E-mail:
+          <input type="email" ng-model="user.email" name="uEmail" required/><br />
+          
+        <div ng-show="form.uEmail.$dirty && form.uEmail.$invalid">Invalid:
+          <span ng-show="form.uEmail.$error.required">Tell us your email.</span>
+          <span ng-show="form.uEmail.$error.email">This is not a valid email.</span>
+        </div>
+        
+    Age:
+    <input type="number" ng-model="user.age" name="size"
+                 min="0" max="200" integer />{{size}}<br />
+          <span ng-show="form.size.$error.min || form.size.$error.max">
+            Your age shoule be in 0~200!</span>
+  </form>
+  <pre>
+    your input :{{user | json}}
+  </pre>
+</div>
